@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RandomNumberGenerator
 {
     public class Exponential : Uniform
     {
-        public Double Next(Double rate)
+        public double Next(double rate)
         {
             var uniformlyRandomNumber = _random.NextDouble();
 

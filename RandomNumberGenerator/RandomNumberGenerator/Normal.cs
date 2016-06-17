@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RandomNumberGenerator
 {
     public class Normal : Uniform
     {
-        public Double Next(Double mean, Double stdDev)
+        public double Next(double mean, double stdDev)
         {
             var uniformalyRandomNumber0 = _random.NextDouble();
             var uniformalyRandomNumber1 = _random.NextDouble();
