@@ -1,2 +1,2 @@
 # RandomNumberGenerator
-Generate some random numbers and test if they're randm
+Generate some random numbers and test if they're random
