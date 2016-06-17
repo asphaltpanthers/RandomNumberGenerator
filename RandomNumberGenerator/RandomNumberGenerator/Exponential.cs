@@ -6,20 +6,8 @@ using System.Threading.Tasks;
 
 namespace RandomNumberGenerator
 {
-    public class Exponential
+    public class Exponential : Uniform
     {
-        private Random _random;
-
-        public Exponential()
-        {
-            _random = new Random();
-        }
-
-        public Exponential(int seed)
-        {
-            _random = new Random(seed);
-        }
-
         public Double Next(Double rate)
         {
             var uniformlyRandomNumber = _random.NextDouble();
