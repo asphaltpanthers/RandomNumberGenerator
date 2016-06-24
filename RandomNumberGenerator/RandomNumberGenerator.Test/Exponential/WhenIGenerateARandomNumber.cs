@@ -14,13 +14,10 @@ namespace RandomNumberGenerator.Test
         [Fact]
         public void ItShouldNotReturnAValueLessThanZero()
         {
-            if (!RandomNumberTester.LoopUntilLimit(() =>
+            Assert.True(RandomNumberTester.LoopUntilLimit(() =>
             {
                 return _exponential.Next(1) > 0;
-            }, 1000))
-            {
-                Assert.True(false, "Exponential distribution should never return a negative number.");
-            }
+            }, 1000));
         }
     }
 }
